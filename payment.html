@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #topcontainer{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        #topimage{
+            width: 100px;
+            height: 70px;
+            margin-left: 20px;
+        } 
+        #login{
+            margin: 14px;
+            color: grey;
+            font-size: large;
+           margin: auto;
+           margin-right: 5px;
+        }
+        .fa-solid{
+            /* margin: 14px; */
+            color: grey;
+            font-size: 30px;
+            /* padding-right: 50px; */
+            margin: auto;
+           
+        }
+        #search{
+            padding-top: 12px;
+            position: relative;
+            display: inline-block;
+             margin: 0px;
+             margin-top: 10px;
+            /* border: 1px solid black; */
+            width: 60%;
+            height: 80px;
+            margin-left: 100px;
+           }
+           #input{
+               width: 70%;
+               height: 40px;
+               margin-top: 10;
+           }
+           #headercatogery{
+               width: 100%;
+               height: 40px;
+               /* border: 1px solid black; */
+           }
+          #footer{
+              width: 100%;
+              height: 350px;
+              /* border: 1px solid black; */
+              margin-bottom: 0px;
+              background-color: rgb(249,249,249);
+              display: flex;
+            
+          }
+          #footer1{
+              width: 75%;
+              height: 100%;
+              /* border: 1px solid black; */
+              display: flex;
+              gap: 60px; 
+              padding-left: 20px;
+              
+          }
+          #footer2{
+            width: 25%;
+              height: 100%;
+              /* border: 1px solid black; */
+          }
+          #footer21{
+              margin-left: 50px;
+              margin-top: 20px;
+          }
+          #socialmedia{
+           margin-left: 50px;
+           font-size: 30px;
+           gap: 20px;
+          }
+          #last{
+              width: 100%;
+              height: 20px;
+              background-color: rgb(249,249,249);
+              display: flex;
+              gap: 30px;
+          }
+          .Clearance{
+           display: flex;
+           gap: 60px;
+          padding-left: 20px;
+           background-color: rgb(249,249,249);
+           color: violet;
+       }
+       #form{
+           width: 50%;
+           height: 200px;
+           /* border: 1px solid black; */
+       }
+       h1{
+           margin-left: 650px;
+           
+       }
+       
+    </style>
+     <script src="https://kit.fontawesome.com/689b6f6569.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="topcontainer">
+         <img id="topimage" src="data:image/png;base64,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" alt="" >
+        <div id="search">
+           <i class="fa-solid fa-magnifying-glass"></i>
+           <i class="fa-solid fa-laptop-mobile"></i>
+         <input type="text" id="input" placeholder="Search for product and brands">
+       </div>
+        <div id="login"><a>
+         Login/Signup
+        </a></div>
+        <i class="fa-solid fa-bag-shopping"><a href="cart.html"></a></i>
+         </div>
+         <hr style="color: grey;">
+         <div id="headercatogery">
+         <div class="Clearance">
+             <h3><a href="product.html">Clearance</a></h3>
+             <h3><a href="product.html">Women</a></h3>
+             <h3> <a href="product.html">Men</a></h3>
+             <h3> <a href="product.html">Kids</a></h3>
+             <h3> <a href="product.html">Shoes</a></h3>
+             <h3> <a href="product.html">Active wear</a></h3>
+             <h3> <a href="product.html">Bags&Accessories</a></h3>
+             <h3> <a href="product.html">HomeHome</a></h3>
+             <h3> <a href="product.html">Beauty</a></h3>
+             <h3> <a href="product.html">Gifts</a></h3>
+             <h3> <a href="product.html">Flash Events</a></h3>
+           
+         </div>
+       </div>
+    </header>
+    <h1>Make your payment </h1>
+    <div id="form">
+    <form action="">
+        <label for="">Name</label>
+        <input id="name" type="text">
+        <br>
+        <label  for="">CArd Number</label>
+        <input id="card" type="Number">
+        <br>
+        <label  for="">CVV</label>
+        <input id="cvv" type="Number">
+        <br>
+        <label  for="">Expiry date</label>
+        <input id="exp" type="Number">
+        <br>
+        <input id="button" type="submit">
+    </form>
+
+</div>
+    <footer>
+        <div id="footer">
+         <div id="footer1">
+             <div>
+                 <h4>Customer Service</h4>
+                 <p>Order Status</p>
+                 <p>Guest Returns</p>
+                 <p>Shipping & Return Policy</p>
+                 <p>Gift Cards</p>
+                 <p>FAQ</p>
+                 <p>Contact Us</p>
+             </div>
+             <div>
+                 <h4>About Us</h4>
+                 <p>About Our Beand</p>
+                 <p>The Nordy Club</p>
+                 <p>Store locator</p>
+                 <p>All Brands</p>
+                 <p>Careers</p>
+                 <p>Get Email Updates</p>
+                 <p>Nordstrom Blog</p>
+                 <p>Nordy Podcast</p>
+             </div>
+             <div>
+                 <h4>Nordstrom Rack & The Community</h4>
+                 <p>Corporate Social Responsiblity</p>
+                 <p>Diversity inclusion & Belonging</p>
+                 <p>Big Brothers Big Sisters</p>
+                 <p>Donate Clothes</p>
+             </div>
+             <div>
+                 <h4>Nordstrom Card</h4>
+                 <P>Apply for a Nordstrom Card</P>
+                 <P>Pay My Bill</P>
+                 <P>Manage my Nordstrom Card</P>
+             </div>
+             <div>
+                 <h4>Nordstrom Inc.</h4>
+                 <p>Nordstrom</p>
+                 <p>Nordstrom Canada</p>
+                 <p>Trunk Club</p>
+                 <p>Hautellook</p>
+                 <p>Investor Relation</p>
+                 <p>Press Release</p>
+                 <p>Nordstrom Media Network</p>
+                 
+             </div>
+         </div>
+         <div id="footer2">
+             <div id="footer21">
+                <i class="fa-solid fa-mobile-button"></i>
+            <h4>Download Our App</h4>
+        </div>
+        <div id="socialmedia">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+         </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    
+    document.querySelector("#button").addEventListener("click", funpaym);
+  function funpaym(){
+    var name = document.querySelector("#name").value
+    var card = document.querySelector("#card").value;
+    var cvv = document.querySelector("#cvv").value;
+    var exp = document.querySelector("#exp").value;
+        event.preventDefault();
+      alert("Congratulation Your order has been succesfully placed")
+      
+    }
+    </script>

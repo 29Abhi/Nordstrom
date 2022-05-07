@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #topcontainer{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        #topimage{
+            width: 100px;
+            height: 70px;
+            margin-left: 20px;
+        } 
+        #login{
+            margin: 14px;
+            color: grey;
+            font-size: large;
+           margin: auto;
+           margin-right: 5px;
+        }
+        .fa-solid{
+            /* margin: 14px; */
+            color: grey;
+            font-size: 30px;
+            /* padding-right: 50px; */
+            margin: auto;
+           
+        }
+        #search{
+            padding-top: 12px;
+            position: relative;
+            display: inline-block;
+             margin: 0px;
+             margin-top: 10px;
+            /* border: 1px solid black; */
+            width: 60%;
+            height: 80px;
+            margin-left: 100px;
+           }
+           #input{
+               width: 70%;
+               height: 40px;
+               margin-top: 10;
+           }
+           #headercatogery{
+               width: 100%;
+               height: 40px;
+               /* border: 1px solid black; */
+           }
+          #footer{
+              width: 100%;
+              height: 350px;
+              /* border: 1px solid black; */
+              margin-bottom: 0px;
+              background-color: rgb(249,249,249);
+              display: flex;
+            
+          }
+          #footer1{
+              width: 75%;
+              height: 100%;
+              /* border: 1px solid black; */
+              display: flex;
+              gap: 60px; 
+              padding-left: 20px;
+              
+          }
+          #footer2{
+            width: 25%;
+              height: 100%;
+              /* border: 1px solid black; */
+          }
+          #footer21{
+              margin-left: 50px;
+              margin-top: 20px;
+          }
+          #socialmedia{
+           margin-left: 50px;
+           font-size: 30px;
+           gap: 20px;
+          }
+          #last{
+              width: 100%;
+              height: 20px;
+              background-color: rgb(249,249,249);
+              display: flex;
+              gap: 30px;
+          }
+          #c1{
+              width: 100%;
+              height: 300px;
+              /* border: 1px solid black; */
+              display: flex;
+              gap: 15px;
+           }
+           .topimage{
+               width: 50%;
+           }
+           .topimage2{
+               width: 50%;
+           }
+          #c2{
+              display: flex;
+              color: blue;
+              gap: 15px;
+              text-decoration: underline;
+          }
+          .ha{
+           margin-left: 470px;
+           font-style: initial;
+          }
+          .hb{
+            margin-left: 720px;
+          }
+          #c3{
+              display: flex;
+              gap: 150px;
+              width: 100%;
+              margin: auto;
+              /* border: 1px solid black; */
+              padding-left: 350px;
+              font-style: initial;
+          }
+          #c4>img{
+              width: 100%;
+              height: 400px;
+          }
+          #product{
+              display: flex;
+              width: 100%;
+              /* border: 1px solid black; */
+              
+          }
+          #c5{
+              display: flex;
+              gap: 20px;
+          }
+          #c5>div>img{
+              width: 250px;
+              height: 350px;
+              gap: 20px;
+             border-radius: 10px;  
+             
+            }
+            #c5>div>p,h5,h6{
+               
+                padding-left: 10px;
+            }
+            #c5>div>h6{
+                text-decoration: line-through;
+            }
+            #spring{
+                padding-left: 650px;
+            }
+            #middlec1{
+                display: flex;
+              /* border: 1px solid black; */
+              margin: auto;
+              justify-content: center;
+             }
+       .Clearance{
+           display: flex;
+           gap: 60px;
+          padding-left: 20px;
+           background-color: rgb(249,249,249);
+           color: violet;
+       }
+       #middlecontainer{
+           display: flex;
+           gap: 3px;
+           border-radius: 5px;
+      }
+      #middlecontainer>div{
+          margin: auto;
+      }
+      #middlecontainer>div>img{
+          width: 220px;
+          height: 280px;
+      }
+      #middlecontainer>div>h6{
+        text-decoration: line-through;
+        
+      }
+      #middlecontainer>div{
+          text-align: center;
+      }
+
+
+      #lastcontainer{
+          display: flex;
+          padding-bottom: 50px;
+      }
+      #lastheading{
+          padding-left: 650px;
+          padding-top: 30px;
+      }
+      #lastcontainer{
+          padding-left: 10px;
+         text-align: center;
+      }
+      #button{
+          padding: 20px 20px 20px 20px;
+          color: white;
+          background-color: black;
+          border-radius: 8px;
+          margin-left: 700px;
+          margin-bottom: 15px;
+     }
+
+    </style>
+    <script src="https://kit.fontawesome.com/689b6f6569.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/689b6f6569.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header start -->
+ <header>
+     <div id="topcontainer">
+      <img id="topimage" src="data:image/png;base64,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" alt="" >
+     <div id="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-laptop-mobile"></i>
+      <input type="text" id="input" placeholder="Search for product and brands">
+    </div>
+     <div id="login"><a href="login.html">
+      Login/Signup
+     </a></div>
+     <i class="fa-solid fa-bag-shopping"><a href="cart.html"></a></i>
+      </div>
+      <hr style="color: grey;">
+      <div id="headercatogery">
+      <div class="Clearance">
+          <h3><a href="product.html">Clearance</a></h3>
+          <h3><a href="product.html">Women</a></h3>
+          <h3> <a href="product.html">Men</a></h3>
+          <h3> <a href="product.html">Kids</a></h3>
+          <h3> <a href="product.html">Shoes</a></h3>
+          <h3> <a href="product.html">Active wear</a></h3>
+          <h3> <a href="product.html">Bags&Accessories</a></h3>
+          <h3> <a href="product.html">HomeHome</a></h3>
+          <h3> <a href="product.html">Beauty</a></h3>
+          <h3> <a href="product.html">Gifts</a></h3>
+          <h3> <a href="product.html">Flash Events</a></h3>
+        
+      </div>
+    </div>
+ </header>
+ <h2>Welcome Back Guys!</h2>
+ <div id="c1">
+   <img class="topimage2" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2022/3/10/6160db76-ee07-49bc-8337-1fc74dd94c2a1646914679466-SS22-PricingCoupon-500Off--1-.gif" />
+ <img class="topimage" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2022/3/10/a1690ca9-bcec-469d-b15b-991b3dad64bc1646910870888-SS22-StripBanners-UnisexUnder999.gif" />
+</div>
+<h1>Sam Edleman, Marc fisher Steven</h1>
+<div id="c2">
+<h3><a>All Sandals</a></h3>
+<h3><a>Beach</a></h3>
+<h3><a>Black Tea</a></h3>
+</div>
+<h1 class="ha">New Flash: Must-Have Sandals Up to 60% Off</h1>
+<h2 class="hb">Online Only</h2>
+<div id="c3">
+    <div>
+        <h3>Bolad &Bright</h3>
+    </div>
+    <div>
+        <h3>Strappy & More</h3>
+    </div>
+    <div>
+        <h3>Flat</h3>
+    </div>
+    <div>
+        <h3>Men</h3>
+    </div>
+    <div>
+        <h3>Kids</h3>
+    </div>
+</div>
+<div id="product">
+<div id="c4">
+    <img  src="https://cdn.liveagent.com/app/uploads/2020/06/teavana-discount-email.jpeg" />
+</div>
+<div id="c5">
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2036958/2022/2/11/c1011608-ffd1-43ba-9a8d-b92737863fe41644574944887-DressBerry-Women-Dusty-Pink-Solid-Flats-4741644574944206-1.jpg"/>
+        <p>WILD DIVA LOUNGE</p>
+        <h5>$44.97
+            (35% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11365474/2020/2/11/79b4d4bb-67ca-40fb-a7a6-cfbdf6d7c7321581423071776-Marc-Loire-Women-Grey--Pink-Woven-Design-Ballerinas-59915814-1.jpg" />
+        <p>Steve Madden</p>
+        <h5> $14.97
+            (34% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15506342/2021/10/20/29226956-1c57-403f-b77e-9bd255c309021634725934292-DressBerry-Women-Silver-Toned--Pink-Embellished-Sliders-3041-1.jpg" />
+        <p>WILD DIVA LOUNGE</p>
+        <h5> $44.97
+            (35% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11398532/2020/1/30/93f20673-99ed-4819-8d9b-3c6af7f549391580366814194-Classic-Tie-Dye-Graphic-Clog-581580366812185-1.jpg" />
+        <p>DV by Dolce Vita</p>
+        <h5> $44.97
+            (24% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14922016/2021/12/29/01962743-0b84-465c-9384-927dd63156b81640770717487-DressBerry-Women-Green--Silver-Toned-Colourblocked-Open-Toe--1.jpg" />
+        <p>Steve Madden</p>
+        <h5>$19.97
+            (50% off)</h5>
+            <h6>$79.99</h6>
+            
+    </div>
+</div>
+</div>
+<h2 id="spring">Spring Must-Have for All</h2>
+<div id="middlec1">
+    <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/3fa337a0-c792-4038-8d12-50d463c189a11598892377363-Levis.jpg" />
+    <img  src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/a7d3676a-9694-4a84-835e-0408fdad884b1598892377407-Nike.jpg" />
+    <img  src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/1dce9c3e-77fa-48f1-85a3-d3c136c1d73e1598892377652-USPA.jpg" />
+    <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/8d5afb84-a464-40af-9971-2e9f0827e9b71598892377591-UCB.jpg" />
+</div>
+<h2>Trending Now</h2>
+<div id="middlecontainer">
+    <div> 
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17674706/2022/3/30/30d8a524-3f4e-4e4f-b25f-594f135b83d81648615171042LooseFitJerseytrousers1.jpg" />
+        <p>Steve Madden</p>
+        <h5>$19.97
+            (50% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17883488/2022/4/14/e3f109ed-7957-4466-84ee-04012ddf571d16499056692455-packcottonjerseyT-shirts1.jpg" />
+        <p>Steve Madden</p>
+        <h5>$19.97
+            (50% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/18037712/2022/4/26/30be8e31-db9c-4373-8ac6-1af350edb4531650961173407OversizedT-shirt1.jpg" />
+        <p>Steve Madden</p>
+        <h5>$19.97
+            (50% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17366524/2022/3/3/837f6c69-1305-43b3-8b2a-ad0225d6b283164631657850310-packhairelastics1.jpg" />
+        <p>Steve Madden</p>
+        <h5>$19.97
+            (50% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17941508/2022/4/19/f0521ef5-f4b6-4113-8527-a23e4752ced21650385563356Puff-sleevedjerseytop1.jpg" />
+        <p>Steve Madden</p>
+        <h5>$19.97
+            (50% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+    <div>
+        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17964608/2022/4/21/e2e10f64-5da3-46eb-aaeb-a286a9f87f261650514475407Patternedjerseydress1.jpg" />
+        <p>Steve Madden</p>
+        <h5>$19.97
+            (50% off)</h5>
+            <h6>$79.99</h6>
+    </div>
+
+</div>
+<div>
+    <img  src="https://assets.ajio.com/cms/AJIO/WEB/06052022-D-unisex-topbannercarousel-p6-brands-upto70.jpg"/>
+</div>
+<h1 id="lastheading"> ! More To Know !</h1>
+<div id="lastcontainer">
+    <div>
+        <img src="https://assets.ajio.com/cms/AJIO/WEB/15042022-D-Unisex-westernwear-westernwear.jpg" />
+        <h3>An Exclusive Offer</h3>
+        <p>Just for new Nordstrom credit cardmembers. Restrictions apply. </p>
+        <p><a href="home.html">Apply Now</a></p>
+    </div>
+    <div>
+        <img src="https://assets.ajio.com/cms/AJIO/WEB/15042022-D-Unisex-westernwear-tops&tees.jpg" />
+        <h3>Nordstrom Celebrates AAPI Month</h3>
+        <p>Join us as we honor Asian and Pacific Islander communities and cultures.
+
+        </p>
+        <p><a href="">Learn More
+        </a></p>
+    </div>
+    <div>
+        <img src="https://assets.ajio.com/cms/AJIO/WEB/15042022-D-Unisex-westernwear-blazers&coats.jpg" />
+        <h3>We Launched a Podcast!</h3>
+        <p>Join Pete Nordstrom and special guests for a behind-the-scenes look at Nordstrom. </p>
+        <p><a href="">Listen to All Episodes</a></p>
+    </div>
+    <div>
+        <img src="https://assets.ajio.com/cms/AJIO/WEB/15042022-D-Unisex-westernwear-blazers&coats.jpg" />
+        <h3>Sponsor a Moment. Ignite Big Potential.</h3>
+        <p>Give the gift of mentorship.</p>
+        <p><a href="">Donate Now & Learn More</a></p>
+    </div>
+</div>
+<button id="button"><a href="home.html" >BACK TO TOP</a></button>
+<footer>
+    <div id="footer">
+     <div id="footer1">
+         <div>
+             <h4>Customer Service</h4>
+             <p>Order Status</p>
+             <p>Guest Returns</p>
+             <p>Shipping & Return Policy</p>
+             <p>Gift Cards</p>
+             <p>FAQ</p>
+             <p>Contact Us</p>
+         </div>
+         <div>
+             <h4>About Us</h4>
+             <p>About Our Beand</p>
+             <p>The Nordy Club</p>
+             <p>Store locator</p>
+             <p>All Brands</p>
+             <p>Careers</p>
+             <p>Get Email Updates</p>
+             <p>Nordstrom Blog</p>
+             <p>Nordy Podcast</p>
+         </div>
+         <div>
+             <h4>Nordstrom Rack & The Community</h4>
+             <p>Corporate Social Responsiblity</p>
+             <p>Diversity inclusion & Belonging</p>
+             <p>Big Brothers Big Sisters</p>
+             <p>Donate Clothes</p>
+         </div>
+         <div>
+             <h4>Nordstrom Card</h4>
+             <P>Apply for a Nordstrom Card</P>
+             <P>Pay My Bill</P>
+             <P>Manage my Nordstrom Card</P>
+         </div>
+         <div>
+             <h4>Nordstrom Inc.</h4>
+             <p>Nordstrom</p>
+             <p>Nordstrom Canada</p>
+             <p>Trunk Club</p>
+             <p>Hautellook</p>
+             <p>Investor Relation</p>
+             <p>Press Release</p>
+             <p>Nordstrom Media Network</p>
+             
+         </div>
+     </div>
+     <div id="footer2">
+         <div id="footer21">
+            <i class="fa-solid fa-mobile-button"></i>
+        <h4>Download Our App</h4>
+    </div>
+    <div id="socialmedia">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div>
+     </div>
+    </div>
+</footer>
+<div id="last">
+<p>Your Privacy Rights</p>
+<p>Do Not Sell My Info</p>
+<p>Term & Condition</p>
+<p>Internet Based Ads</p>
+<p>Califprnia Supply Chain ACT </p>
+<p>©2022 Nordstrom Rack</p>
+</div>
+
+</body>
+</html>
+<script>
+  document.querySelector()
+</script>
